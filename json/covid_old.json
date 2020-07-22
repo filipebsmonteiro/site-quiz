@@ -1,0 +1,285 @@
+{
+  "questions": [
+    {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Bota fake nisso! Afinal, estudos já comprovaram que o novo coronavírus pode sobreviver (e muito) em diversos tipos diferentes de objetos e superfícies. &#128542;"
+      },
+      "number": 1,
+	    "image": "img/smartphone.svg",
+      "prompt": "Tudo bem compartilhar objetos, tipo o celular, pois o novo coronavírus não se transmite dessa forma."
+    },
+	  
+    {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "É preciso lembrar que o mercado pode não ter higienizado a sua embalagem. E muitas outras pessoas podem ter manipulado o produto antes de você. (Eca &#129314;)"
+      },
+      "number": 2,
+	    "image": "img/groceries.svg",
+      "prompt": "Não preciso me preocupar em higienizar as compras do mercado, afinal, eu mesmo peguei da prateleira com as mãos limpas."
+    },
+	  
+    {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Devemos sim diminuir as chances de transmissão, mas nada de colocar a mão na boca, já que colocamos a mão em praticamente tudo! Use a dobra do antebraço ou lenço descartável que é mais sucesso. &#128521;"
+      },
+      "image": "img/cough.svg",
+      "number": 3,
+      "prompt": "Quando tossir, a melhor coisa a se fazer é cobrir a boca com a mão, afinal, devo evitar contaminar outras pessoas."
+    },
+	  
+    {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Nananinanão! Podemos demorar até 14 dias para desenvolver os sintomas e, nesse período, podemos transmitir a doença. Os portadores assintomáticos do vírus já respondem por 50% da transmissões. &#128562;"
+      },
+	   "image": "img/beijo.svg",
+      "number": 4,
+      "prompt": "Se me sinto bem e tomo todos os cuidados, não tem problema abraçar e beijar as pessoas que amo."
+    },
+	  
+    {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Mas fique atento: os sintomas não ocorrem no mesmo instante da infecção. Falando em sintomas... &#128580;"
+      },
+	    "image": "img/fever.svg",
+      "number": 5,
+      "prompt": "Os sintomas mais comuns da COVID-19 são: febre, tosse seca e cansaço."
+    },	
+	  
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Verdade verdadeira. O período de incubação varia entre 2 e 14 dias. E a média é de 5 dias. &#129319;"
+      },
+	    "image": "img/february-14.svg",
+      "number": 6,
+      "prompt": "É possível estar com a COVID-19 por até 14 dias antes de apresentar os sintomas."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Quem dera! Até o momento, não há qualquer medicamento, substância, vitamina, alimento ou vacina que previna contra a COVID-19. &#128530;"
+      },
+	    "image": "img/cup.svg",
+      "number": 7,
+      "prompt": "Fazer gargarejo com água morna, sal e vinagre previne infecção."
+    },	
+	  
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Mas não transmitir! Segundo estudo chinês, nenhum dos gatos domésticos testados teve carga viral suficiente para desenvolver ou transmitir a doença. Ufa! &#128517; Jamais abandone o seu pet!"
+      },
+	   "image": "img/cat-happy.svg",
+      "number": 8,
+      "prompt": "Gatos também podem ser infectados."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Com ou sem máscara, levar as mãos ao rosto após tocar superfícies ou objetos contaminados pode resultar em infecção.  E a máscara é também muito importante para evitar a transmissão do vírus por pessoas infectadas, ok? &#128567;"
+      },
+	    "image": "img/healthcare-and-medical.svg",
+      "number": 9,
+      "prompt": "Usando máscara não é possível ser infectado."
+    },	
+	  
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Olha a pegadinha! Crianças não estão no grupo de risco da doença. &#128521;"
+      },
+	    "image": "img/old.svg",
+      "number": 10,
+      "prompt": "A COVID-19 é mais perigosa para indivíduos acima dos 60 anos ou debilitados, portadores de doenças crônicas e crianças."
+    },	
+	  
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Apesar de não estarem no grupo de risco, os pequenos também podem desenvolver e transmitir a doença. Especialmente se têm alguma doença crônica debilitante. &#128521;"
+      },
+	    "image": "img/kid-and-baby.svg",
+      "number": 11,
+      "prompt": "O novo coronavírus não afeta crianças."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Estar espirrando não é condição suficiente para se deslocar até o hospital. Procure atendimento se estiver com sintomas graves, como dificuldade para respirar e febre alta (a partir de 39°C). &#128552;"
+      },
+	    "image": "img/espirro.svg",
+      "number": 12,
+      "prompt": "Devo procurar o hospital quando estiver espirrando."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Muita atenção: todos os cuidados no controle de doenças crônicas como diabetes, hipertensão, insuficiência cardíaca, doenças reumatológicas e pulmonares, devem ser mantidos, tá? E o mesmo vale para as doenças oncológicas. Até porque essas condições podem potencializar o novo coronavírus. &#129301;"
+      },
+	    "image": "img/hospital.svg",
+      "number": 13,
+      "prompt": "É melhor evitar ir ao hospital, mesmo que pra controlar doenças crônicas, e diminuir as chances de exposição ao vírus."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Verdade. Mas: é importante se vacinar para diminuir o volume de pessoas procurando atendimento médico e favorecer o diagnóstico preciso da COVID-19. &#128521;"
+      },
+	    "image": "img/vacina.svg",
+      "number": 14,
+      "prompt": "A vacina da gripe não protege contra a COVID-19."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Olha aí a boa e velha prática que nunca sai de moda. Mas precisa lavar direito, hein? &#128579;"
+      },
+	    "image": "img/bubbles.svg",
+      "number": 15,
+      "prompt": "Qualquer sabão serve para matar o vírus."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Ainda não é possível fazer essa afirmação, bem como afirmar que quem já teve o novo coronavírus não desenvolve mais a doença. &#128542;"
+      },
+	    "image": "img/hands-virus-transmission.svg",
+      "number": 16,
+      "prompt": "Quem já se curou da infecção pelo novo coronavírus não transmite mais o vírus."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Na maioria dos casos, não deixa. Mas, em casos graves, como qualquer pneumonia, pode resultar em danos na função respiratória. Outros estudos sugerem eventuais problemas neurológicos após a infecção. &#128533;"
+      },
+	    "image": "img/man-sequel.svg",
+      "number": 17,
+      "prompt": "A COVID-19 não deixa sequelas."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Infelizmente, a chance de contaminação com as luvas aumenta, pois as pessoas acabam tocando o rosto com elas ou se contaminando na hora de retirá-las. &#128562;"
+      },
+	    "image": "img/gloves.svg",
+      "number": 18,
+      "prompt": "Luvas são uma ótima ideia para prevenir a doença."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 0,
+        "text": "Fique atento para levar mais de uma máscara ao sair de casa e troque-as com frequência (no mínimo diária). Lembre-se também de manipular sempre pelas alças, ok? &#128513;"
+      },
+	    "image": "img/wetmask.svg",
+      "number": 19,
+      "prompt": "Se minha máscara ficar úmida, devo trocá-la o quanto antes."
+    },	
+
+   {
+      "answers": [
+        "FATO",
+        "FAKE"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Fique tranquila, mamãe. Os benefícios do aleitamento materno superam os riscos. Em caso de suspeita ou confirmação do novo coronavírus, desde que a mãe adote as medidas recomendadas (máscara facial, higienização das mãos), não há contraindicação. E lembre-se de manter distanciamento de 2 metros para o berço quando não estiver amamentando. &#128521;"
+      },
+	    "image": "img/breastfeeding.svg",
+      "number": 20,
+      "prompt": "Devo interromper a amamentação para proteger meu bebê."
+    }	
+  ],
+  "title": "D'Or Consultoria - Quiz Covid-19",
+  "url": "https://dorconsultoria.com.br/coronavirus/quiz"
+}

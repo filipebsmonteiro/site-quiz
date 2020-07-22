@@ -1,0 +1,597 @@
+/* Colors */
+/* Fonts */
+/* Structure */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #ffb800 url(../img-new/bg.png) no-repeat;
+  background-size: cover;
+  background-position: center left;
+  font-family: "Gotham Rounded Book";
+}
+
+#page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "content" "footer";
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+footer > div:last-child {
+  flex: 1;
+  text-align: right;
+}
+footer .footer-logo svg {
+  width: 80px;
+  height: auto;
+  fill: white;
+  padding: 20px 0 10px 0;
+}
+footer .footer-logo svg path {
+  fill: white;
+}
+footer #social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer #social-links a, footer #social-links a:visited {
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+footer #social-links svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+main {
+  grid-area: content;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+  .page-container {
+    padding: 0 20px;
+  }
+}
+
+.svg-definitions {
+  height: 0;
+  width: 0;
+  overflow: hidden !important;
+  position: absolute;
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  position: relative;
+}
+header .page-container {
+  display: flex;
+  max-width: 370px;
+}
+@media screen and (max-width: 700px) {
+  header .page-container {
+    padding: 0 20px 0 0;
+  }
+}
+header .page-container > div:first-child img {
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+header .page-container > div:last-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .page-container > div:last-child img:first-child {
+  max-width: 190px;
+  height: auto;
+  margin: 35px 0 20px 20px;
+}
+header .page-container > div:last-child img:last-child {
+  max-width: 140px;
+  height: auto;
+  margin-right: 8px;
+}
+
+#quiz {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "quiz" "dots";
+}
+#quiz .carousel-inner {
+  grid-area: quiz;
+}
+#quiz .progress-circles {
+  grid-area: dots;
+  padding: 0;
+}
+
+h1, h2, h3, h4, .quiz-question, .btn {
+  font-family: "Gotham Rounded Bold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h1, .quiz-question, .intro {
+  color: #FFF;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.intro {
+  margin-top: 30px;
+}
+
+h3, h3.texto {
+  color: #505050;
+  font-size: 21px;
+  margin-top: 30px;
+  font-family: "Gotham Rounded Medium";
+}
+
+p, input, button, .results-ratio, .correct-text {
+  font-family: "Gotham Rounded Book";
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol {
+  display: none;
+}
+
+.results-ratio {
+  color: #505050;
+}
+
+.sweet-alert button {
+  border-radius: 30px;
+  padding-top: 15px;
+}
+
+.quiz-question {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.8em;
+  line-height: 1.1em;
+}
+
+.quiz-answers {
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+
+.btn2 {
+  margin-top: 25px;
+  font-size: 1.6em;
+  line-height: 1em;
+  border: none;
+  font-family: "Gotham Rounded Medium";
+  font-weight: normal;
+  font-style: normal;
+  padding: 20px 20px;
+  border-radius: 30px;
+  background-color: #505050;
+  color: #e7e7e7;
+}
+
+.btn-outline {
+  margin-top: 5px;
+  width: 100%;
+  border: solid 1px white;
+  font-family: "Gotham Rounded Medium";
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.m-30{
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.sweet-alert button {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.quiz-button.btn {
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+  background-color: transparent !important;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  text-transform: uppercase;
+  white-space: normal !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-button.btn:first-child {
+  margin-right: 30px;
+}
+
+.quiz-button.btn:hover {
+  background-color: #0096D2;
+  color: #fff;
+}
+
+.question-image {
+  min-height: 100px;
+  max-width: 100px;
+  margin: 15px auto 0 auto;
+}
+@media screen and (min-width: 700px) {
+  .question-image {
+    min-height: 160px;
+    max-width: 160px;
+    margin: 25px auto 0 auto;
+  }
+}
+
+.results-ratio,
+.results-social,
+.quiz-title,
+.quiz-result-title {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px !important;
+}
+
+.question-image img {
+  padding-top: 0px !important;
+}
+
+.image-credit {
+  font-size: 12px;
+  color: #696969;
+  font-weight: 400;
+  text-align: right;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.results-social {
+  display: table;
+}
+
+.correct-text {
+  margin-top: 10px;
+  font-style: normal;
+  font-family: Arial, "Gotham Rounded Book", Georgia, serif;
+  line-height: 1.2em;
+}
+
+.results-message {
+  font-weight: normal;
+  font-family: "Gotham Rounded Medium", Georgia, serif;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: #FFF;
+  margin: 10px auto 0px auto;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.share-title {
+  color: #FFF;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-title > span {
+  margin-right: 20px;
+  display: inline-block;
+  font-family: "Gotham Rounded Medium";
+  font-size: 1em;
+}
+.share-title > a svg {
+  fill: white;
+  width: 22px;
+  height: 22px;
+}
+
+.ctardsl {
+  font-weight: normal;
+  font-family: "Gotham Rounded Medium", Georgia, serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  background: white;
+  margin: 16px auto 0px auto;
+  text-align: center;
+  padding-top: 0px !important;
+  color: #505050;
+  max-width: 530px;
+  overflow: hidden;
+}
+.ctardsl .cta-text {
+  padding-right: 170px;
+  text-align: left;
+  padding-top: 20px;
+  color: #7c7c7b;
+}
+.ctardsl .cta-text b {
+  font-weight: normal;
+  font-family: "Gotham Rounded Bold";
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.ctardsl .cta-text span {
+  color: #ffb800;
+  font-size: 1.3em;
+  line-height: 1.1em;
+  font-family: "Gotham Rounded Bold";
+}
+@media screen and (min-width: 700px) {
+  .ctardsl .cta-text {
+    font-size: 1.4em;
+    padding-right: 230px;
+    padding-left: 20px;
+    line-height: 1.2em;
+  }
+  .ctardsl .cta-text b {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  .ctardsl .cta-text span {
+    font-size: 1.8em;
+    line-height: 0.9em;
+  }
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.cta-actions > div:first-child {
+  display: flex;
+  align-items: flex-end;
+}
+.cta-actions > div:first-child img {
+  max-width: 160px;
+  height: auto;
+  margin-top: -80px;
+}
+@media screen and (min-width: 700px) {
+  .cta-actions > div:first-child img {
+    max-width: 300px;
+    height: auto;
+    margin-top: -160px;
+    margin-right: -70px;
+  }
+}
+.cta-actions > div:first-child > div:first-child {
+  flex: 1;
+  font-family: "Gotham Rounded Book";
+  font-size: 28px;
+  letter-spacing: 3px;
+  padding: 0 0 8px 0;
+}
+.cta-actions > div:first-child > div:first-child span {
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Gotham Rounded Medium";
+  padding-bottom: 6px;
+  display: inline-block;
+}
+@media screen and (min-width: 700px) {
+  .cta-actions > div:first-child > div:first-child {
+    font-size: 40px;
+    letter-spacing: 8px;
+    padding: 0 0 25px 0;
+  }
+  .cta-actions > div:first-child > div:first-child span {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+  }
+}
+.cta-actions-buttons {
+  display: flex;
+  padding: 0 10px 20px 10px;
+}
+
+.ctardsl .btn2 {
+  margin: 10px auto 0px auto;
+  font-size: 1em;
+  line-height: 0.5em;
+  border: none;
+  font-family: "Gotham Rounded Medium";
+  font-weight: normal;
+  font-style: normal;
+  padding: 20px 20px 15px;
+  border-radius: 30px;
+  background-color: #505050;
+  color: #FFF;
+  display: block;
+}
+.ctardsl .btn2:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 700px) {
+  .ctardsl .btn2 {
+    min-width: 225px;
+  }
+}
+
+.legenda-promo {
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.resptec {
+  margin: 10px auto;
+  color: #505050;
+  font-size: 10px;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Gotham Rounded Book", Arial, Georgia, serif;
+}
+
+.quiz-title {
+  font-size: 60px;
+  font-weight: 300;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+h2.quiz-result-title {
+  /* font-size: 36px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2); */
+  display: none;
+}
+
+.results-ratio {
+  margin: 0px auto;
+  font-size: 22px;
+  line-height: 1.1em;
+  font-family: "Gotham Rounded Bold", Arial, Helvetica, sans-serif;
+}
+
+.results-social {
+  width: 100%;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+#social-text {
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-family: "Gotham Rounded Medium", Georgia, serif;
+  color: white;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 700px) {
+  #social-text {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.results-social a:not(:first-child) {
+  margin-left: 20px;
+}
+
+.results-social a.twitter {
+  margin-left: 0px !important;
+}
+
+.link-empresas {
+  color: #7c7c7b;
+  display: block;
+  background: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-family: "Gotham Rounded Book";
+}
+.link-empresas:hover {
+  color: black;
+}
+@media screen and (min-width: 700px) {
+  .link-empresas {
+    padding: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.progress-circles {
+  position: relative;
+  margin: 10px auto 0 auto;
+  display: none;
+}
+
+.progress-circles.show {
+  display: block;
+}
+
+.show {
+  display: table !important;
+}
+
+.progress-circles li {
+  list-style: none;
+  display: inline-block;
+  background: #505050;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.progress-circles li.dark {
+  background-color: #FFF;
+}
+
+.sweet-alert {
+  margin-top: -251px !important;
+  position: absolute;
+}
+
+@media (max-width: 540px) {
+  .quiz-question {
+    font-size: 22px;
+  }
+
+  .sweet-alert {
+    margin-top: -251px !important;
+    position: absolute;
+  }
+}
+
+/*# sourceMappingURL=quiz.css.map */

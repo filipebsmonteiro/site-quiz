@@ -1,0 +1,132 @@
+{
+  "questions": [
+    { "number": 1,
+      "image": "img/smartphone.svg",
+      "prompt": "Tudo bem compartilhar objetos, tipo o celular, pois o novo coronavírus não se transmite dessa forma.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Bota fake nisso! Afinal, estudos já comprovaram que o novo coronavírus pode sobreviver (e muito) em diversos tipos diferentes de objetos e superfícies. &#128542;"
+      }
+    },
+
+    { "number": 2,
+      "image": "img/groceries.svg",
+      "prompt": "Não preciso me preocupar em higienizar as compras do mercado, afinal, eu mesmo peguei da prateleira com as mãos limpas.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "É preciso lembrar que o mercado pode não ter higienizado a sua embalagem. E muitas outras pessoas podem ter manipulado o produto antes de você. (Eca &#129314;)"
+      }
+    },
+
+    { "number": 3,
+      "image": "img/cough.svg",
+      "prompt": "Quando tossir, a melhor coisa a se fazer é cobrir a boca com a mão, afinal, devo evitar contaminar outras pessoas.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Devemos sim diminuir as chances de transmissão, mas nada de colocar a mão na boca, já que colocamos a mão em praticamente tudo! Use a dobra do antebraço ou lenço descartável que é mais sucesso. &#128521;"
+      }
+    },
+
+    { "number": 4,
+      "image": "img/beijo.svg",
+      "prompt": "Se me sinto bem e tomo todos os cuidados, não tem problema abraçar e beijar as pessoas que amo.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Nananinanão! Podemos demorar até 14 dias para desenvolver os sintomas e, nesse período, podemos transmitir a doença. Os portadores assintomáticos do vírus já respondem por 50% da transmissões. &#128562;"
+      }
+    },
+
+    { "number": 5,
+      "image": "img/fever.svg",
+      "prompt": "Os sintomas mais comuns da COVID-19 são: febre, tosse seca e cansaço.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 0,
+        "text": "Mas fique atento: os sintomas não ocorrem no mesmo instante da infecção. Falando em sintomas... &#128580;"
+      }
+    },
+
+    { "number": 6,
+      "image": "img/february-14.svg",
+      "prompt": "É possível estar com a COVID-19 por até 14 dias antes de apresentar os sintomas.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 0,
+        "text": "Verdade verdadeira. O período de incubação varia entre 2 e 14 dias. E a média é de 5 dias. &#129319;"
+      }
+    },
+
+    { "number": 7,
+      "image": "img/kid-and-baby.svg",
+      "prompt": "O novo coronavírus não afeta crianças.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Apesar de não estarem no grupo de risco como indivíduos acima dos 60 anos, os pequenos também podem desenvolver e transmitir a doença. Especialmente se têm alguma doença crônica debilitante. &#128521;"
+      }
+    },
+
+    { "number": 8,
+      "image": "img/hospital.svg",
+      "prompt": "É melhor evitar ir ao hospital, mesmo que pra controlar doenças crônicas, e diminuir as chances de exposição ao vírus.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Muita atenção: todos os cuidados no controle de doenças crônicas como diabetes, hipertensão, insuficiência cardíaca, doenças reumatológicas e pulmonares, devem ser mantidos, tá? E o mesmo vale para as doenças oncológicas. Até porque essas condições podem potencializar o novo coronavírus. &#129301;"
+      }
+    },
+
+    { "number": 9,
+      "image": "img/vacina.svg",
+      "prompt": "A vacina da gripe não protege contra a COVID-19.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 0,
+        "text": "Verdade. Mas: é importante se vacinar para diminuir o volume de pessoas procurando atendimento médico e favorecer o diagnóstico preciso da COVID-19. &#128521;"
+      }
+    },
+
+    { "number": 10,
+      "image": "img/bubbles.svg",
+      "prompt": "Qualquer sabão serve para matar o vírus.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 0,
+        "text": "Olha aí a boa e velha prática que nunca sai de moda. Mas precisa lavar direito, hein? &#128579;"
+      }
+    },
+
+    { "number": 11,
+      "image": "img/hands-virus-transmission.svg",
+      "prompt": "Quem já se curou da infecção pelo novo coronavírus não transmite mais o vírus.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Ainda não é possível fazer essa afirmação, bem como afirmar que quem já teve o novo coronavírus não desenvolve mais a doença. &#128542;"
+      }
+    },
+
+    { "number": 12,
+      "image": "img/gloves.svg",
+      "prompt": "Luvas são uma ótima ideia para prevenir a doença.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 1,
+        "text": "Infelizmente, a chance de contaminação com as luvas aumenta, pois as pessoas acabam tocando o rosto com elas ou se contaminando na hora de retirá-las. &#128562;"
+      }
+    },
+
+    { "number": 13,
+      "image": "img/wetmask.svg",
+      "prompt": "Se minha máscara ficar úmida, devo trocá-la o quanto antes.",
+      "answers": ["FATO", "FAKE"],
+      "correct": { "index": 0,
+        "text": "Fique atento para levar mais de uma máscara ao sair de casa e troque-as com a frequência necessária. Lembre-se também de manipular sempre pelas alças, ok? &#128513;"
+      }
+    },
+
+    { "number": 14,
+      "image": "img/man-sequel.svg",
+      "prompt": "Países com maior número de testes estão conseguindo controlar melhor a doença.",
+      "answers": ["FATO","FAKE"],
+      "correct": { "index": 0,
+        "text": "Os países que estão fazendo o maior número possível de testes de diagnóstico ao vírus, têm mais informação para tomar decisões sobre a contenção da pandemia, como a quarentena obrigatória e o confinamento social."
+      }
+    }
+
+  ],
+  "title": "VEUS - Quiz Covid-19",
+  "url": "https://site.veusserver.com/coronavirus/quiz"
+}

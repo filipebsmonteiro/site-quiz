@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados dos Quizes</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Mostra dados das respostas do <a href="/">Quiz VEUS</a>!</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#questoes">Questões</a></li>
+            <li><a data-toggle="tab" href="#exames">Exames</a></li>
+        </ul>
+
+        <div class="tab-content" style="margin-top: 20px;">
+            <div id="questoes" class="tab-pane fade in active">
+                <canvas id="questoeschart"></canvas>
+            </div>
+            <div id="exames" class="tab-pane fade">
+                <canvas id="exameschart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        $(function($) {
+            var chartColors = {
+                red: 'rgb(255, 99, 132)',
+                orange: 'rgb(255, 159, 64)',
+                yellow: 'rgb(255, 205, 86)',
+                green: 'rgb(75, 192, 192)',
+                blue: 'rgb(54, 162, 235)',
+                purple: 'rgb(153, 102, 255)',
+                grey: 'rgb(201, 203, 207)'
+            }
+            var dias = [];
+            var acertos = {
+                label: 'Acertos',
+                borderColor: chartColors.red,
+                backgroundColor: chartColors.red,
+                fill: false,
+                data: []
+            };
+            var laboratorio = {
+                label: 'Exames em laboratórios',
+                borderColor: chartColors.orange,
+                backgroundColor: chartColors.orange,
+                fill: false,
+                data: [],
+            };
+            var empresa = {
+                label: 'Exames nas empresas',
+                borderColor: chartColors.yellow,
+                backgroundColor: chartColors.yellow,
+                fill: false,
+                data: [],
+            };
+            var casa = {
+                label: 'Exames em casas',
+                borderColor: chartColors.green,
+                backgroundColor: chartColors.green,
+                fill: false,
+                data: [],
+            };
+            var outros = {
+                label: 'Exames outros',
+                borderColor: chartColors.blue,
+                backgroundColor: chartColors.blue,
+                fill: false,
+                data: [],
+            };
+            var nao_fez = {
+                label: 'Não fez exame',
+                borderColor: chartColors.purple,
+                backgroundColor: chartColors.purple,
+                fill: false,
+                data: [],
+            };
+            var ChartData = {
+                labels: dias,
+                datasets: [
+                    laboratorio,
+                    empresa,
+                    casa,
+                    outros,
+                    nao_fez
+                ]
+            };
+            var $questoesChart = new Chart.Line('questoeschart', {
+                    options: {
+                        tooltips: {
+                            callbacks: {
+                                label: function(tooltipItem, data) {
+                                    return Chart.defaults.global.tooltips.callbacks.label(tooltipItem, data) + '%';
+                                }
+                            }
+                        }
+                    },
+                    data: {
+                        labels: dias,
+                        datasets: [ acertos ],
+                    }
+                });
+            var $examesChart = new Chart.Line('exameschart', {
+                    data: ChartData
+                });
+
+            function loadChart(respostas) {
+                var respostas_by_date = respostas.reduce((a,b) => {
+                    var $date = new Date(b.created_at);
+                    var dia  = $date.getDate().toString();
+                    var diaF = (dia.length == 1) ? '0'+dia : dia;
+                    var mes  = ($date.getMonth()+1).toString(); //+1 pois no getMonth Janeiro começa com zero.
+                    var mesF = (mes.length == 1) ? '0'+mes : mes;
+                    var anoF = $date.getFullYear();
+                    var $data = `${diaF}/${mesF}/${anoF}`;
+
+                    a[$data] = a[$data] ? a[$data].concat(b) : [b];
+                    return a;
+                }, {});
+
+                $.each(respostas_by_date, function (key, val) {
+                    dias.push(key);
+                    var acertosSum = 0;
+                    var totalSum = 0;
+                    var labSum = 0;
+                    var empresaSum = 0;
+                    var casaSum = 0;
+                    var outrosSum = 0;
+                    var naoFezSum = 0;
+                    val.map(resposta => {
+                        acertosSum += Number.parseInt(resposta.correct);
+                        totalSum += Number.parseInt(resposta.total);
+                        switch(resposta.exam){
+                            case ('Laboratório'):
+                                labSum += 1;
+                                break;
+                            case ('Empresa'):
+                                empresaSum += 1;
+                                break;
+                            case ('Casa'):
+                                casaSum += 1;
+                                break;
+                            case ('Outros'):
+                                outrosSum += 1;
+                                break;
+                            case ('Não fez'):
+                                naoFezSum += 1;
+                                break;
+                        }
+                    });
+                    acertos.data.push(Math.round(100 * (acertosSum / totalSum)))
+                    laboratorio.data.push(labSum)
+                    empresa.data.push(empresaSum)
+                    casa.data.push(casaSum)
+                    outros.data.push(outrosSum)
+                    nao_fez.data.push(naoFezSum)
+                });
+
+                $questoesChart.update();
+                $examesChart.update();
+            }
+
+            $.getJSON("../json/answers.json", loadChart);
+
+        });
+    </script>
+</body>
+</html>
